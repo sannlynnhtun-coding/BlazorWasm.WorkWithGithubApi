@@ -3,17 +3,27 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:5613",
-      "sslPort": 44314
+      "applicationUrl": "http://localhost:24712",
+      "sslPort": 44300
     }
   },
   "profiles": {
-    "BlazorWasm.WorkWithGithubApi": {
+    "http": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
       "inspectUri": "{wsProtocol}://{url.hostname}:{url.port}/_framework/debug/ws-proxy?browser={browserInspectUri}",
-      "applicationUrl": "https://localhost:7202;http://localhost:5239",
+      "applicationUrl": "http://localhost:5177",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "https": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "inspectUri": "{wsProtocol}://{url.hostname}:{url.port}/_framework/debug/ws-proxy?browser={browserInspectUri}",
+      "applicationUrl": "https://localhost:7264;http://localhost:5177",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
